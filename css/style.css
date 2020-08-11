@@ -90,3 +90,15 @@ body {
 .page__button:hover {
   border: 2px solid grey;
 }
+.page__info {
+  position: absolute;
+}
+.page__wrapper {
+  width: 1370px;
+  height: 140px;
+  background-image: url("/img/bg.png");
+}
+.page__wrapper-item img {
+  width: 40px;
+  height: 37px;
+}
