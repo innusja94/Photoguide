@@ -9,6 +9,93 @@
 </head>
 
 <body>
+
+    <!-- Сущности БЭМ: block / element / mod -->
+
+    <!-- Блок и модификатор, может быть как у блоков так и элементов: block / block--active -->
+
+    <!-- Элемент блока и модификатор: block__elem / block__elem--active -->
+
+
+    <!-- block banner -->
+    <div class="banner" style="background-image: url('/img/background_page.jpg');">
+
+        <!-- block head -->
+        <div class="head">
+            <div class="container">
+                <div class="head__inner">
+
+                    <!-- block logo -->
+                    <a href="" class="logo head__logo">
+                        <!-- element logo__image -->
+                        <img src="/img/logo.png" alt="" class="logo__image">
+                    </a>
+
+                    <!-- block menu -->
+                    <div class="menu head__menu">
+                        <!-- elem menu__link / mod menu__link--active -->
+                        <a href="" class="menu__link menu__link--active">Цены и услуги</a>
+                        <a href="" class="menu__link">Контакты</a>
+                        <a href="" class="menu__link">Отзывы</a>
+                        <a href="" class="menu__link">Галерея</a>
+                    </div>
+
+                    <button class="menu-button head__menu-button">
+                        <img src="./img/ui.png" alt="" class="menu-button__icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="banner__content">
+                <h1 class="banner__title">Фотосессия в Турции</h1>
+                <div class="banner__subtitle">по цене 7000 рублей за 100 фотографий и 10 одноминутных видео для Instagram</div>
+                <button class="button">Связаться с фотографом</button>
+            </div>
+            <div class="banner__head">
+                <div class="banner__label">Вы получаете</div>
+                <div class="banner__hint">*Турция</div>
+            </div>
+        </div>
+        <div class="banner__info">
+            <div class="container">
+                <div class="banner__grid">
+                    <div class="banner__col">
+
+                        <!-- block advatages-box -->
+                        <div class="advatages-box">
+                            <img src="/img/Vector.png" alt="" class="advatages-box__icon">
+                            <div class="advatages-box__text">100 обработанных фото и оригиналы</div>
+                        </div>
+
+                    </div>
+                    <div class="banner__col">
+
+                        <!-- block advatages-box -->
+                        <div class="advatages-box">
+                            <img src="/img/fast-delivery.png" alt="" class="advatages-box__icon">
+                            <div class="advatages-box__text">Первые 10 фото и 1 видео в течение 24 часов</div>
+                        </div>
+
+                    </div>
+                    <div class="banner__col">
+
+                        <!-- block advatages-box -->
+                        <div class="advatages-box">
+                            <img src="/img/Calendar.png" alt="" class="advatages-box__icon">
+                            <div class="advatages-box__text">Все фотографии через 15 дней</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="block__head">
         <div class="block__logo">
             <img class="block__img" src="/img/logo.png" alt="picture">
@@ -22,9 +109,14 @@
             </ul>
         </div>
     </div>
+
+
+
+
     <div class="page">
         <div class="page__wrap">
             <div class="page__background">
+
                 <img src="/img/background_page.jpg" alt="image">
                 <div class="page__header">
                     <h2 class="page__title">Фотосессия <br> в Турции</h2>
@@ -58,6 +150,8 @@
             </div>
         </div>
     </div>
-</body>
 
+
+
+</body>
 </html>
