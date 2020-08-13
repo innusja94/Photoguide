@@ -502,7 +502,8 @@ ul > li:before {
 .team__rightSide {
   background-color: #151515a8;
   width: 100%;
-  padding: 80px 80px 70px;
+  margin-left: -100px;
+  padding: 80px 70px;
 }
 
 .team__title {
@@ -515,14 +516,14 @@ ul > li:before {
 }
 
 .team__subtitle {
-  width: 530px;
+  width: 500px;
   font-size: 34px;
   line-height: 120%;
   color: #FFFFFF;
 }
 
 .team__text {
-  width: 530px;
+  width: 500px;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: -0.3px;
