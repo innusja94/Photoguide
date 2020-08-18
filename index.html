@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
     <title>Photoguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
@@ -96,6 +94,9 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="buttons">
         <div class="container">
             <div class="buttons__title">Галерея</div>
@@ -130,7 +131,7 @@
         </div>
     </div>
 
-    <div class="packages">
+    <div class="packages packages--active">
         <div class="container">
             <div class="packages__title">услуги и цены</div>
             <div class="packages__subtitle">Сколько стоят наши услуги</div>
@@ -153,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="packages__col packages--active">
+                <div class="packages__col packages__col--active ">
                     <div class="box-premium">
                         <div class="box-easy__title">Пакет</div>
                         <h2 class="box-easy__subtitle">Премиум</h2>
@@ -220,36 +221,51 @@
 
 
     <div class="feedback">
-        <div class="feedback__title">отзывы</div>
-        <div class="feedback__subtitle">
-            Узнайте, что пишут о нас наши клиенты
-            в своих Instagram аккаунтах
-        </div>
-        <div class="feedback__slider">
-            <div class="feedback__left">
-                <img class="feedback__image" src="/img/photo_masha.png" alt="photo">
-                <h2 class="feedback__description">Просто восторг!</h2>
-                <p class="feedback__text">
-                    Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из
-                    photiguide.biz
-                    Спасибо! Получила массу удовольствия от фотосессии!
-                    Всех подруг отправляю к вам!
-                </p>
-                <p class="feedback__name">@Masha_Sharapova</p>
+        <div class="container">
+            <div class="feedback__title">отзывы</div>
+            <div class="feedback__subtitle">
+                Узнайте, что пишут о нас наши клиенты
+                в своих Instagram аккаунтах
             </div>
-            <div class="feedback__left">
-                <img class="feedback__image" src="/img/photo_masha.png" alt="photo">
-                <h2 class="feedback__description">Просто восторг!</h2>
-                <p class="feedback__text">
-                    Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из
-                    photiguide.biz
-                    Спасибо! Получила массу удовольствия от фотосессии!
-                    Всех подруг отправляю к вам!
-                </p>
-                <p class="feedback__name">@Masha_Sharapova</p>
+            <div class="feedback-slider">
+                <div class="feedback-slider__item">
+                    <div class="review-card">
+                        <img src="./img/photo_masha.png" alt="" class="review-card__avatar">
+                        <div class="review-card__content">
+                            <div class="review-card__title">Просто восторг!</div>
+                            <div class="review-card__text">Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из photiguide.biz Спасибо! Получила массу удовольствия от фотосессии!
+                                Всех подруг отправляю к вам! </div>
+                            <a href="" class="review-card__link">@Masha_Sharapova </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-slider__item">
+                    <div class="review-card">
+                        <img src="./img/photo_masha.png" alt="" class="review-card__avatar">
+                        <div class="review-card__content">
+                            <div class="review-card__title">Просто восторг!</div>
+                            <div class="review-card__text">Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из photiguide.biz Спасибо! Получила массу удовольствия от фотосессии!
+                                Всех подруг отправляю к вам! </div>
+                            <a href="" class="review-card__link">@Masha_Sharapova </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-slider__item">
+                    <div class="review-card">
+                        <img src="./img/photo_masha.png" alt="" class="review-card__avatar">
+                        <div class="review-card__content">
+                            <div class="review-card__title">Просто восторг!</div>
+                            <div class="review-card__text">Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из photiguide.biz Спасибо! Получила массу удовольствия от фотосессии!
+                                Всех подруг отправляю к вам! </div>
+                            <a href="" class="review-card__link">@Masha_Sharapova </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    
 
 
     <div class="footer">
@@ -322,9 +338,8 @@
 
 </body>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 
 </html>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import url('<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
 
 *,
 *::before,
@@ -188,7 +188,6 @@ body {
     }
 }
 // end banner
-
 .button {
     cursor: pointer;
     padding: 22.7px 50px;
@@ -461,9 +460,6 @@ body {
 }
 
 .feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     &__title {
         font-size: 18px;
         text-align: center;
@@ -473,15 +469,16 @@ body {
         margin-top: 80px;
     }
     &__subtitle {
-        width: 651px;
+        max-width: 651px;
+        margin: 27px auto 50px;
         font-size: 34px;
         text-align: center;
         color: #333333;
         font-weight: bold;
-        margin-top: 27px;
-        margin-bottom: 50px;
-        
     }
+}
+
+.feedback-slider {
     &__image {
         width: 300px;
         height: 320px;
@@ -492,14 +489,40 @@ body {
         border: 1px solid #E9E9E9;
         margin-bottom: 100px;
     }
-    &__text {
-        width: 430px;
-    }    
     &__left {
-        
         background: red;
     }
+    &__text {
+        width: 430px;
+    }
 }
+
+.review-card {
+    border: 2px solid #E9E9E9;
+    padding: 40px 50px;
+    display: flex;
+    &__title {
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.3px;
+        color: #333333;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.3px;
+        color: #707070;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -0.3px;
+        color: #505050;
+        border-radius: 8px;
+    }
+}
+
+
 
 .footer {
     background: #202020;
