@@ -191,13 +191,14 @@ body {
 
 .button {
     cursor: pointer;
-    padding: 24.5px 56px;
+    padding: 22.7px 50px;
+    text-transform: uppercase;
     border: none;
     font-size: 15px;
     line-height: 140%;
     text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-weight: bold;
+    // letter-spacing: 1px;
     color: #333333;
     background: #fff;
 }
@@ -205,25 +206,25 @@ body {
 .buttons {
     text-align: center;
     &__title {
-        font-style: bold;
+        font-weight: bold;
         font-size: 18px;
         color: #F2C94C;
         letter-spacing: 10px;
         margin-top: 80px;
     }
     &__subtitle {
-        font-style: bold;
+        font-weight: bold;
         font-size: 42px;
         color: #333333;
         margin-top: 17px;
         margin-bottom: 40px;
     }
-    &__style {
+    &__tabs {
         margin-right: 20px;
     }
 }
 
-.style {
+.tabs {
     background: white;
     border: 2px solid #E9E9E9;
     font-size: 15px;
@@ -300,6 +301,7 @@ body {
         margin-top: 80px;
         padding: 80px 0 0 0;
         color: #F2C94C;
+        
     }
     &__subtitle {
         font-size: 42px;
@@ -335,6 +337,9 @@ body {
         opacity: 0.2;
         text-align: center;
         margin-top: 20px;
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
     }
     &__subtitle {
         font-family: 'Playfair Display', serif;
@@ -345,6 +350,9 @@ body {
         text-align: center;
         letter-spacing: -0.5px;
         color: #F2C94C;
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
     }
     &__price {
         font-size: 36px;
@@ -352,6 +360,11 @@ body {
         text-align: center;
         color: #FFFFFF;
         margin-top: 70px;
+        @media (max-width: 768px) {
+            font-size: 25px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
     }
     &__button {      
         width: 230px;
@@ -360,7 +373,6 @@ body {
         border: none;
         font-size: 15px;
         font-weight: bold;
-        line-height: 140%;
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -370,43 +382,58 @@ body {
         left: 50%;
         transform: translate(-50%, 0);
     }
-    &__list {
+    &__lists {
         width: 340px;
         color: #FFFFFF;
+        @media (max-width: 768px) {
+            width: 200px;
+            padding: 0 0 0 10px;
+        }        
+    }
+    &__list {
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+        margin: 10px;
+    }
+    &__list:before {
+        content: '✔';
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        color: #F2C94C;
+    }
+    &__list--noactive {
+        color: #FFFFFF;
+    opacity: 0.2;
     }
     
-}
-
-.noactive {
-    color: #FFFFFF;
-    opacity: 0.2;
-}
-
-ul{
-    list-style: none;
-}
-ul > li{
-    padding-left: 20px;
-    position: relative;
-    margin: 10px;
-}
-ul > li:before{
-    content: '✔';
-    position: absolute; 
-    top: 0; 
-    left: 0;
-    color: #F2C94C;
 }
 
 .team {
     background-size: cover;
     background-position: center;
     display: flex;
-    &__rightSide {
+    &__image {
+        margin-bottom: -5px;
+        
+    }
+    &__right-side {
         background-color: #151515a8;
-        width: 100%;
+        width: 768px;
         margin-left: -100px;
         padding: 80px 70px;
+        @media(max-width: 768px) {
+            
+            margin: 0px;
+        }
+        
+    }
+    &__left-side {
+        @media(max-width: 768px) {
+            display: none;
+        }
+        
     }
     &__title {
         font-weight: bold;
@@ -430,5 +457,207 @@ ul > li:before{
         color: rgba(255, 255, 255, 0.8);
         margin-top: 40px;
     }
-
+    
 }
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #F2C94C;
+        margin-top: 80px;
+    }
+    &__subtitle {
+        width: 651px;
+        font-size: 34px;
+        text-align: center;
+        color: #333333;
+        font-weight: bold;
+        margin-top: 27px;
+        margin-bottom: 50px;
+        
+    }
+    &__image {
+        width: 300px;
+        height: 320px;
+    }
+    &__slider {
+        width: 860px;
+        height: 260px;
+        border: 1px solid #E9E9E9;
+        margin-bottom: 100px;
+    }
+    &__text {
+        width: 430px;
+    }    
+    &__left {
+        
+        background: red;
+    }
+}
+
+.footer {
+    background: #202020;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #F2C94C;
+        padding: 80px 0 0 0;
+    }
+    &__subtitle {
+        width: 1024px;
+        font-size: 34px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 17px;
+        font-weight: bold;
+        @media(max-width: 768px) {
+            width: 700px;
+            font-size: 28px;
+        }
+    }
+    &__privacy-policy {
+        width: 860px;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color: #707070;
+        margin-bottom: 60px;
+        @media(max-width: 768px) {
+            width: 650px;
+        }
+    }
+    &__copyright {
+        padding: 21px 0 25px 0;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        color: #707070;
+        border-top: 1px solid #ffffff34;
+        
+    }
+}
+
+.icons {
+    &__social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__social-icon {
+        margin-right: 20px;
+    }
+    &__icon {
+        width: 80px;
+        height: 80px;
+        
+        margin-bottom: 10px;
+    }
+    &__name {
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.data {
+    &__frame {
+        width: 860px;
+        margin-top: 76px;
+        margin-bottom: 20px;
+        border-color: #ffffff2d;
+        @media(max-width: 768px) {
+            width: 650px;
+        }
+    }
+    &__left {
+        padding: 50px 0 50px 50px;
+        @media(max-width: 768px) {
+            padding: 50px 0 20px 20px;
+        }
+    }
+    &__right {
+        padding: 68px 50px 50px 0;
+        @media(max-width: 768px) {
+            padding: 68px 0 20px 20px;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        color: #FFFFFF;
+        letter-spacing: -0.5px;
+        text-align: center;
+        margin-top: 60px;
+        padding: 0 30px 0 30px;
+    }
+    &__form {
+        display: flex;
+        
+    }
+    &__name {
+        font-size: 12px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    &__full-name {
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+        width: 370px;
+        padding: 0 0 7px 0;
+        margin-right: 20px;
+    }
+    &__comment {
+        font-size: 18px;
+        line-height: 12px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        border-bottom: 1px solid #ffffffd3;
+        padding: 0 0 20px 0;
+        width: 370px;
+        margin-top: 40px;
+    }
+    &__phone {
+        font-size: 18px;
+        line-height: 12px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        border-bottom: 1px solid #ffffffd3;
+        padding: 0 0 20px 0;
+        margin-bottom: 18px;
+    }
+    &__button {
+        width: 370px;
+        height: 55px;
+        background: linear-gradient(101.67deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%), #F2C94C;
+        border: none;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: bold;
+        @media(max-width: 768px) {
+            width: 250px;
+        }
+    }
+    @media(max-width: 768px) {
+            width: 720px;
+        }
+}
+

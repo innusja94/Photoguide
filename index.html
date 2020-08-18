@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
     <title>Photoguide</title>
 </head>
 
@@ -98,31 +101,31 @@
             <div class="buttons__title">Галерея</div>
             <div class="buttons__subtitle">Мы работаем во всех стилях</div>
             <div class="buttons__grid">
-                <button class="style buttons__style">Семейная съемка</button>
-                <button class="style buttons__style">Love story</button>
-                <button class="style buttons__style">Lifestyle</button>
-                <button class="style buttons__style style--active ">Fashion</button>
-                <button class="style buttons__style">Glamour</button>
+                <button class="tabs buttons__tabs">Семейная съемка</button>
+                <button class="tabs buttons__tabs">Love story</button>
+                <button class="tabs buttons__tabs">Lifestyle</button>
+                <button class="tabs buttons__tabs tabs--active ">Fashion</button>
+                <button class="tabs buttons__tabs">Glamour</button>
             </div>
         </div>
 
         <div class="gallery">
             <div class="gallery__grid">
-                <figure class="gallery__item gallery__item--1">
+                <div class="gallery__item gallery__item--1">
                     <img src="img/girl1.png" class="gallery__img" alt="Image 1">
-                </figure>
-                <figure class="gallery__item gallery__item--2">
+                </div>
+                <div class="gallery__item gallery__item--2">
                     <img src="img/girl2.png" class="gallery__img" alt="Image 2">
-                </figure>
-                <figure class="gallery__item gallery__item--3">
+                </div>
+                <div class="gallery__item gallery__item--3">
                     <img src="img/girl3.png" class="gallery__img" alt="Image 3">
-                </figure>
-                <figure class="gallery__item gallery__item--4">
+                </div>
+                <div class="gallery__item gallery__item--4">
                     <img src="img/girl4.png" class="gallery__img" alt="Image 4">
-                </figure>
-                <figure class="gallery__item gallery__item--5">
+                </div>
+                <div class="gallery__item gallery__item--5">
                     <img src="img/girl5.png" class="gallery__img" alt="Image 5">
-                </figure>
+                </div>
             </div>
         </div>
     </div>
@@ -137,13 +140,13 @@
                     <div class="box-easy">
                         <div class="box-easy__title">Пакет</div>
                         <h2 class="box-easy__subtitle">Лёгкий</h2>
-                        <ul class="box-easy__list">
-                            <li>Съёмка и обработка 60 фотографий</li>
-                            <li>USB-флешка с фото</li>
-                            <li>10 одноминутных видео для Instagram</li>
-                            <li class="noactive">Аренда платья на фотосессию</li>
-                            <li class="noactive">Аренда квадрокоптера</li>
-                            <li class="noactive">Доставка в живописные места Анталии</li>
+                        <ul class="box-easy__lists">
+                            <li class="box-easy__list">Съёмка и обработка 60 фотографий</li>
+                            <li class="box-easy__list">USB-флешка с фото</li>
+                            <li class="box-easy__list">10 одноминутных видео для Instagram</li>
+                            <li class="box-easy__list box-easy__list--noactive">Аренда платья на фотосессию</li>
+                            <li class="box-easy__list box-easy__list--noactive">Аренда квадрокоптера</li>
+                            <li class="box-easy__list box-easy__list--noactive">Доставка в живописные места Анталии</li>
                         </ul>
                         <h2 class="box-easy__price">7 000 ₽</h2>
                         <button class="box-easy__button">Заказать</button>
@@ -154,13 +157,13 @@
                     <div class="box-premium">
                         <div class="box-easy__title">Пакет</div>
                         <h2 class="box-easy__subtitle">Премиум</h2>
-                        <ul class="box-easy__list">
-                            <li>Съёмка и обработка 100 фотографий</li>
-                            <li>USB-флешка с фото</li>
-                            <li>20 одноминутных видео для Instagram</li>
-                            <li>Аренда платья на фотосессию</li>
-                            <li>Аренда квадрокоптера</li>
-                            <li>Доставка в живописные места Анталии</li>
+                        <ul class="box-easy__lists">
+                            <li class="box-easy__list">Съёмка и обработка 100 фотографий</li>
+                            <li class="box-easy__list">USB-флешка с фото</li>
+                            <li class="box-easy__list">20 одноминутных видео для Instagram</li>
+                            <li class="box-easy__list">Аренда платья на фотосессию</li>
+                            <li class="box-easy__list">Аренда квадрокоптера</li>
+                            <li class="box-easy__list">Доставка в живописные места Анталии</li>
                         </ul>
                         <h2 class="box-easy__price">12 000 ₽</h2>
                         <button class="box-easy__button">Заказать</button>
@@ -171,13 +174,13 @@
                     <div class="box-standard">
                         <div class="box-easy__title">Пакет</div>
                         <h2 class="box-easy__subtitle">Стандарт</h2>
-                        <ul class="box-easy__list">
-                            <li>Съёмка и обработка 80 фотографий</li>
-                            <li>USB-флешка с фото</li>
-                            <li>15 одноминутных видео для Instagram</li>
-                            <li>Аренда платья на фотосессию</li>
-                            <li class="noactive">Аренда квадрокоптера</li>
-                            <li class="noactive">Доставка в живописные места Анталии</li>
+                        <ul class="box-easy__lists">
+                            <li class="box-easy__list">Съёмка и обработка 80 фотографий</li>
+                            <li class="box-easy__list">USB-флешка с фото</li>
+                            <li class="box-easy__list">15 одноминутных видео для Instagram</li>
+                            <li class="box-easy__list">Аренда платья на фотосессию</li>
+                            <li class="box-easy__list box-easy__list--noactive">Аренда квадрокоптера</li>
+                            <li class="box-easy__list box-easy__list--noactive">Доставка в живописные места Анталии</li>
                         </ul>
                         <h2 class="box-easy__price">9 000 ₽</h2>
                         <button class="box-easy__button">Заказать</button>
@@ -189,10 +192,10 @@
 
 
     <div class="team" style="background-image: url('/img/background_team.jpg');">
-        <div class="team__leftSide">
-            <img src="/img/team.png" alt="team">
+        <div class="team__left-side">
+            <img class="team__image" src="/img/team.png" alt="team">
         </div>
-        <div class="team__rightSide">
+        <div class="team__right-side">
             <div class="team__title">Наша команда</div>
             <div class="team__subtitle">
                 Посмотрите 2-минутное видео
@@ -216,6 +219,112 @@
     </div>
 
 
+    <div class="feedback">
+        <div class="feedback__title">отзывы</div>
+        <div class="feedback__subtitle">
+            Узнайте, что пишут о нас наши клиенты
+            в своих Instagram аккаунтах
+        </div>
+        <div class="feedback__slider">
+            <div class="feedback__left">
+                <img class="feedback__image" src="/img/photo_masha.png" alt="photo">
+                <h2 class="feedback__description">Просто восторг!</h2>
+                <p class="feedback__text">
+                    Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из
+                    photiguide.biz
+                    Спасибо! Получила массу удовольствия от фотосессии!
+                    Всех подруг отправляю к вам!
+                </p>
+                <p class="feedback__name">@Masha_Sharapova</p>
+            </div>
+            <div class="feedback__left">
+                <img class="feedback__image" src="/img/photo_masha.png" alt="photo">
+                <h2 class="feedback__description">Просто восторг!</h2>
+                <p class="feedback__text">
+                    Анталия, берег средиземного моря! Получила массу удовольствия от фотосесси с ребятами из
+                    photiguide.biz
+                    Спасибо! Получила массу удовольствия от фотосессии!
+                    Всех подруг отправляю к вам!
+                </p>
+                <p class="feedback__name">@Masha_Sharapova</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container footer__container">
+            <div class="footer__title">Контакты</div>
+            <div class="footer__subtitle">
+                Свяжитесь с нами удобным вам способом, чтобы договориться
+                о встрече-знакомстве и обсудить детали
+            </div>
+            <div class="icons">
+                <div class="icons__social-icons">
+                    <div class="icons__social-icon">
+                        <a href="#"><img src="/img/icon1.png" alt="" class="icons__icon"></a>
+                        <div class="icons__name">Telegram</div>
+                    </div>
+                    <div class="icons__social-icon">
+                        <a href="#"><img src="/img/icon2.png" alt="" class="icons__icon"></a>
+                        <div class="icons__name">Viber</div>
+                    </div>
+                    <div class="icons__social-icon">
+                        <a href="#"><img src="/img/icon3.png" alt="" class="icons__icon"></a>
+                        <div class="icons__name">Facebook</div>
+                    </div>
+
+                    <div class="icons__social-icon">
+                        <a href="#"><img src="/img/icon4.png" alt="" class="icons__icon"></a>
+                        <div class="icons__name">Instagram</div>
+                    </div>
+
+                    <div class="icons__social-icon">
+                        <a href="#"><img src="/img/icon5.png" alt="" class="icons__icon"></a>
+                        <div class="icons__name">whatsapp</div>
+                    </div>
+                    <div class="icons__social-icon">
+                        <a href="#"><img src="/img/icon6.png" alt="" class="icons__icon"></a>
+                        <div class="icons__name">VKOntakte</div>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                <fieldset class="data__frame">
+                    <legend class="data__title">
+                        Или оставьте данные и мы перезвоним
+                    </legend>
+                    <div class="data__form">
+                        <div class="data__left">
+                            <div class="data__name">Введите имя</div>
+                            <div class="data__full-name">Оксана Петрова</div>
+                            <div class="data__comment">Оставьте Комментарий</div>
+                        </div>
+                        <div class="data__right">
+                            <div class="data__phone">Введите Телефон</div>
+                            <button class="data__button">Отправить заявку</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="footer__privacy-policy">
+                Пользуясь сайтом photoguide.biz и оставляя заявку Вы соглашаетесь с Политикой конфиденциальности
+                нашей
+                компании. Мы гарантируем,
+                что Ваши данные будут использоваться только для связи с Вами и не будут переданы третьим лицам.
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            2019 © Photoguide.biz. All rights reserved. Бренд упакован Digital Butlers.
+        </div>
+    </div>
+
 </body>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 
 </html>
