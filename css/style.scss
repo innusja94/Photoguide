@@ -239,6 +239,12 @@ body {
 }
 
 .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1320px;
+    margin: 0 auto;
+    
     &__img {
         width: 100%;
         height: 100%;
@@ -256,6 +262,7 @@ body {
     &__item {
         margin: 0;
     }
+    
     &__item--1 {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -320,7 +327,7 @@ body {
         border: 1px solid #494848;
         margin-bottom: 80px;
     }
-    &--active {
+    &__col--active {
         border: 1px solid #FFFFFF;
         
     }
@@ -402,7 +409,7 @@ body {
         left: 0;
         color: #F2C94C;
     }
-    &__list--noactive {
+    &__list--disabled {
         color: #FFFFFF;
     opacity: 0.2;
     }
@@ -454,6 +461,14 @@ body {
         line-height: 140%;
         letter-spacing: -0.3px;
         color: rgba(255, 255, 255, 0.8);
+        & span {
+            color: #F2C94C;
+        }
+        & a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
         margin-top: 40px;
     }
     
@@ -475,52 +490,86 @@ body {
         text-align: center;
         color: #333333;
         font-weight: bold;
+        & span {
+            font-family: "Playfair Display", serif;
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: normal;
+        }
     }
-}
-
-.feedback-slider {
-    &__image {
-        width: 300px;
-        height: 320px;
-    }
-    &__slider {
-        width: 860px;
-        height: 260px;
-        border: 1px solid #E9E9E9;
-        margin-bottom: 100px;
-    }
-    &__left {
-        background: red;
-    }
-    &__text {
-        width: 430px;
-    }
+   
 }
 
 .review-card {
     border: 2px solid #E9E9E9;
-    padding: 40px 50px;
+    width: 860px;
+    height: 260px;
     display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    &__avatar {
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+    &__content {
+        padding: 40px 50px;
+    }
     &__title {
         font-size: 20px;
+        font-weight: bold;
         line-height: 140%;
         letter-spacing: -0.3px;
         color: #333333;
+        margin-bottom: 17px;
     }
     &__text {
         font-size: 16px;
         line-height: 150%;
         letter-spacing: -0.3px;
         color: #707070;
+        margin-bottom: 20px;
+    }
+    &__user {
+        display: flex;
+        
+
     }
     &__link {
         font-size: 16px;
-        line-height: 100%;
+        font-weight: bold;
         letter-spacing: -0.3px;
         color: #505050;
-        border-radius: 8px;
+        text-decoration: none;
+        margin-right: 10px;
     }
 }
+
+.slider {
+    position: relative;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+   
+  }
+  .slick-arrow.slick-prev {
+    margin-left: 190px;
+    margin-top: -30px;
+
+    background: url('/img/arrow_left.png') 0 0 / 100% no-repeat;
+    border: none;
+  }
+  
+  .slick-arrow.slick-next {
+    right: 195px;
+    margin-top: -30px;
+    background: url('/img/arrow_right.png') 0 0 / 100% no-repeat;
+    border: none;
+  }
 
 
 
@@ -615,7 +664,7 @@ body {
         }
     }
     &__right {
-        padding: 68px 50px 50px 0;
+        padding: 50px 50px 50px 0;
         @media(max-width: 768px) {
             padding: 68px 0 20px 20px;
         }
@@ -630,40 +679,18 @@ body {
     }
     &__form {
         display: flex;
-        
     }
-    &__name {
-        font-size: 12px;
-        color: #FFFFFF;
-        opacity: 0.5;
-    }
-    &__full-name {
+    &__input {
         font-size: 18px;
-        line-height: 30px;
+        line-height: 12px;
         color: #FFFFFF;
-        border-bottom: 1px solid #FFFFFF;
         width: 370px;
-        padding: 0 0 7px 0;
+        height: 55px;
+        margin-bottom: 17px;
         margin-right: 20px;
-    }
-    &__comment {
-        font-size: 18px;
-        line-height: 12px;
-        color: #FFFFFF;
-        opacity: 0.5;
-        border-bottom: 1px solid #ffffffd3;
-        padding: 0 0 20px 0;
-        width: 370px;
-        margin-top: 40px;
-    }
-    &__phone {
-        font-size: 18px;
-        line-height: 12px;
-        color: #FFFFFF;
-        opacity: 0.5;
-        border-bottom: 1px solid #ffffffd3;
-        padding: 0 0 20px 0;
-        margin-bottom: 18px;
+        background: #202020;
+        border-right: none;
+        border-bottom: 1px solid #ffffff5d;
     }
     &__button {
         width: 370px;
